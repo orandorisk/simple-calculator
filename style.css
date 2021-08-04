@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    background: rgb(0, 127, 156);
+    background: linear-gradient(50deg, rgba(0, 127, 156, 1) 0%, rgba(95, 112, 154, 1) 49%, rgba(198, 4, 153, 1) 100%);
+}
+
+section {
+    height: 100vh;
+    max-width: 1440px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    box-sizing: border-box;
+    padding: 0 30rem;
+}
+
+p {
+    color: rgb(224, 233, 238);
+    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(224, 233, 238);
+}
+
+input {
+    border: none;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: rgb(224, 233, 238);
+}
+
+.container {
+    width: 100%;
+    height: 70vh;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0.2em;
+}
+
+.teks {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 1.2em;
+}
+
+.tombol {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.row1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.row3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.row4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.row5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: rgba(1, 68, 104, 0.05);
+}
+
+/* responsive smartphone 375px */
+@media (max-width:1060px) {
+    section {
+        padding: 0 1.2rem;
+    }
+
+    .container {
+        height: 80vh;
+    }
+
+    .teks {
+        font-size: 1.1em;
+    }
+
+    .btn {
+        font-size: 1em;
+    }
+}
