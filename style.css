@@ -16,14 +16,13 @@ section {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-content: center;
     box-sizing: border-box;
     padding: 0 30rem;
 }
 
 p {
     color: rgb(224, 233, 238);
-    font-size: 1.1em;
+    font-size: 0.9em;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 1rem;
 }
@@ -35,12 +34,12 @@ a {
 
 input {
     border: none;
+    color: rgb(224, 233, 238);
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    color: rgb(224, 233, 238);
 }
 
 .container {
@@ -49,17 +48,18 @@ input {
     margin: auto;
     display: grid;
     grid-template-rows: 1fr 4fr;
-    align-items: center;
     overflow: hidden;
     border-radius: 0.2em;
 }
 
 .teks {
+    color: rgb(224, 233, 238);
     width: 100%;
     height: 100%;
     padding: 1rem;
     box-sizing: border-box;
     font-size: 1.2em;
+
 }
 
 .tombol {
@@ -70,7 +70,7 @@ input {
 
 .row1 {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
 }
 
 .row2 {
@@ -102,6 +102,23 @@ input {
 .btn:hover {
     cursor: pointer;
     background: rgba(1, 68, 104, 0.05);
+}
+
+.dark-theme {
+    background: rgb(9, 21, 24);
+    background: linear-gradient(50deg, rgb(5, 16, 19) 0%, rgb(5, 9, 17) 49%, rgb(29, 9, 24) 100%);
+}
+
+.theme {
+    width: 30px;
+    display: block;
+    align-self: center;
+    margin-bottom: 0.9rem;
+    cursor: pointer;
+}
+
+.ubah {
+    background-image: url(img/moon.png);
 }
 
 /* responsive smartphone 375px */
